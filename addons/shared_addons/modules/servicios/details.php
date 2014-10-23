@@ -2,21 +2,21 @@
 
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Module_Products extends Module {
+class Module_Servicios extends Module {
 
     public $version = '1.0';
-    public $mainTable = 'products';
-    public $imageTable = 'product_images';
+    public $mainTable = 'servicios';
+    public $imageTable = 'servicios_images';
 
     public function info() {
         return array(
             'name' => array(
-                'en' => 'Products',
-                'es' => 'Productos'
+                'en' => 'Servicios',
+                'es' => 'Servicios'
             ),
             'description' => array(
-                'en' => 'Products @BrayanAcebo 2014',
-                'es' => 'Productos @BrayanAcebo 2014',
+                'en' => 'Servicios @BrayanAcebo 2014',
+                'es' => 'Servicios @BrayanAcebo 2014',
             ),
             'frontend' => TRUE,
             'backend' => TRUE,
@@ -61,16 +61,6 @@ class Module_Products extends Module {
                 'constraint' => '455',
                 'null' => true
             ),
-            'video' => array(
-                'type' => 'VARCHAR',
-                'constraint' => '455',
-                'null' => true
-            ),
-            'outstanding' => array(
-                'type' => 'INT',
-                'constraint' => '1',
-                'null' => true
-            ),
             'created_at' => array(
                 'type' => 'DATETIME',
                 'constraint' => '',
@@ -99,7 +89,7 @@ class Module_Products extends Module {
                 'constraint' => '11',
                 'auto_increment' => true
             ),
-            'product_id' => array(
+            'servicio_id' => array(
                 'type' => 'INT',
                 'constraint' => '11',
                 'null' => false
@@ -139,7 +129,7 @@ class Module_Products extends Module {
     }
 
     public function help() {
-        return "Modulo de productos y multiples imagenes";
+        return "Modulo de servicios y multiples imagenes";
     }
 
 }

@@ -2,9 +2,9 @@
 <div class="row">
     <div class="col-sm-12">
         <section class="panel">
-            <header class="panel-heading">Nueva Imagen para "<?php echo $product->name ?>"</header>
+            <header class="panel-heading">Nueva Imagen para "<?php echo $servicio->name ?>"</header>
             <div class="panel-body">
-                <?php echo form_open_multipart(site_url('admin/products/store_image'), ' class="form-horizontal"') ?>
+                <?php echo form_open_multipart(site_url('admin/servicios/store_image'), ' class="form-horizontal"') ?>
 
                 <div class="tab-content">
                     <div id="create" class="tab-pane active">
@@ -36,8 +36,8 @@
 				                         <span class="help-block">
 				                            - Imagen Permitidas gif | jpg | png | jpeg<br>
 				                            - Tamaño Máximo 2 MB<br>
-				                            - Ancho 478px<br>
-				                            - Alto 315px
+				                            - Ancho 519px<br>
+                                            - Alto 413px
 				                        </span>
 				                     </div>
 				                 </div>
@@ -46,9 +46,9 @@
 
                         <div class="form-group">
                             <div class="col-lg-offset-2 col-lg-6">
-                            	<?php echo  form_hidden('id', $product->id) ?>
+                            	<?php echo  form_hidden('id', $servicio->id) ?>
                                 <button type="submit" name="btnAction" value="save" class="btn btn-primary"><span>Guardar</span></button>
-                                <a href="<?php echo base_url('admin/products/images/'.$product->id); ?>" class="btn btn-danger">Cancelar</a>
+                                <a href="<?php echo base_url('admin/servicios/images/'.$servicio->id); ?>" class="btn btn-danger">Cancelar</a>
                             </div>
                         </div>
 

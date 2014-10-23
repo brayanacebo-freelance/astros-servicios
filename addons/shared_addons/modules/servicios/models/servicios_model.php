@@ -6,12 +6,12 @@ if (!defined('BASEPATH'))
 /**
  * @author  Brayan Acebo
  */
-class Product_Model extends MY_Model {
+class Servicios_Model extends MY_Model {
 
     public function __construct()
     {
         parent::__construct();
-        $this->_table = $this->db->dbprefix . 'products';
+        $this->_table = $this->db->dbprefix . 'servicios';
     }
 
 }

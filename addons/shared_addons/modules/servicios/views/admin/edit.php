@@ -1,9 +1,9 @@
 <div class="row">
     <div class="col-sm-12">
         <section class="panel">
-            <header class="panel-heading">Nuevo Producto</header>
+            <header class="panel-heading">Editar Servicio</header>
             <div class="panel-body">
-                <?php echo form_open_multipart(site_url('admin/products/store'), ' class="form-horizontal"') ?>
+                <?php echo form_open_multipart(site_url('admin/servicios/update'), ' class="form-horizontal"') ?>
 
                 <div class="tab-content">
                     <div id="create" class="tab-pane active">
@@ -20,14 +20,14 @@
                         <div class="form-group">
                             <label class="control-label col-md-2 req">Nombre</label>
                             <div class="col-md-4 col-xs-11">
-                                <?php echo  form_input('name', set_value('name'), 'class="form-control"') ?>
+                                <?php echo  form_input('name', $servicio->name, 'class="form-control"') ?>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label class="control-label col-md-2 req">Introducción</label>
                             <div class="col-md-4 col-xs-11">
-                                <?php echo  form_textarea('introduction', set_value('introduction'), 'class="form-control"') ?>
+                                <?php echo  form_textarea('introduction', $servicio->introduction, 'class="form-control"') ?>
                             </div>
                         </div>
 
@@ -36,7 +36,12 @@
                                 <div class="controls col-md-10">
                                     <div class="fileupload fileupload-new" data-provides="fileupload">
                                         <div class="fileupload-new thumbnail" style="height: 150px;">
+                                            <?php if (!empty($servicio->image)): ?>
+                                                    <img src="<?php echo site_url($servicio->image) ?>" height="150">
+                                            <?php endif; ?>
+                                            <?php if (empty($servicio->image)): ?>
                                             <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="No hay imagen" />
+                                            <?php endif; ?>
                                         </div>
                                         <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 150px; max-height: 150px; line-height: 20px;"></div>
                                         <div>
@@ -49,8 +54,8 @@
                                          <span class="help-block">
                                             - Imagen Permitidas gif | jpg | png | jpeg<br>
                                             - Tamaño Máximo 2 MB<br>
-                                            - Ancho 478px<br>
-                                            - Alto 315px
+                                            - Ancho 519px<br>
+                                            - Alto 413px
                                         </span>
                                      </div>
                                  </div>
@@ -58,24 +63,18 @@
                          </div>
 
                         <div class="form-group">
-                            <label class="control-label col-md-2">Video de YouTuBe</label>
-                            <div class="col-md-8 col-xs-11">
-                                <?php echo  form_input('video', set_value('video'), 'class="form-control"') ?>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
                             <label class="control-label col-md-2 req">Descripción</label>
                             <div class="col-sm-9">
-                                <textarea class="form-control ckeditor" name="description" rows="6"><?php echo set_value('description') ?></textarea>
+                                <textarea class="form-control ckeditor" name="description" rows="6"><?php echo $servicio->description ?></textarea>
                                 <span class="help-block">Evite pegar texto directamente desde un sitio web u otro editor de texto, de ser necesario use la herramienta pegar desde.</span>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-lg-offset-2 col-lg-6">
+                                <?php echo form_hidden('id', $servicio->id); ?>
                                 <button type="submit" name="btnAction" value="save" class="btn btn-primary"><span>Guardar</span></button>
-                                <a href="<?php echo base_url('admin/products'); ?>" class="btn btn-danger">Cancelar</a>
+                                <a href="<?php echo base_url('admin/servicios'); ?>" class="btn btn-danger">Cancelar</a>
                             </div>
                         </div>
 

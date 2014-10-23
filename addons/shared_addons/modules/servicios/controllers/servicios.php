@@ -11,7 +11,7 @@ if (!defined('BASEPATH'))
 * @category 	Modulos
 */
 
-class Products extends Public_Controller {
+class Servicios extends Public_Controller {
 
     public function __construct() {
         parent::__construct();
