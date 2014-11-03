@@ -1,12 +1,33 @@
+/*Inicio Brayan*/
+#text-slide{
+	background-color: black;
+	width: 400px;
+	opacity: 0.7;
+	margin-top: -240px;
+	margin-left: 820px;
+	color: white;
+	word-wrap: break-word !important;
+	padding: 10px;
+}
+#text-slide strong{
+	font-size: 24px;
+	font-stretch: ultra-condensed !important;
+}
+#text-slide a{
+	color: white;
+}
+/*Fin Brayan*/
+
 .fullwidthbanner-container {
-    max-height: 460px !important;
+    max-height: 462px !important;
     overflow: hidden;
     padding: 0;
     position: relative;
     width: 100% !important;
+    -left: 120px;
 }
 .fullwidthbanner-container .fullwidthabnner {
-    max-height: 460px !important;
+    max-height: 462px !important;
     position: relative;
     width: 100% !important;
 }
@@ -30,10 +51,9 @@
 .caption a.btn:hover { color: #fff; }
 
 .caption.title {
-	color: #fff;
+	color: white;
 	font-size: 48px;
 	line-height: 60px;
-	text-transform: uppercase;
 }
 
 .caption span { color: #96e0a9; }
@@ -123,36 +143,30 @@
 .caption.icons-3.alt span:after { display: none; } 
 
 .tp-leftarrow.default {
-	width: 50px;	
-	height: 50px;
-	border-radius: 50%;
+	margin-left: -20px !important;
+	border-radius: 0px 8px 8px 0px;
 	background: rgba(255, 255, 255, 0.5) url(./assets/prev.png) no-repeat center center;
-	opacity: 0.5;	
+	
 }
 														
 .tp-rightarrow.default {
-	width: 50px;	
-	height: 50px;
-	border-radius: 50%;
+	margin-right: -20px !important;
+	border-radius: 8px 0px 0px 8px;
 	background: rgba(255, 255, 255, 0.5) url(./assets/next.png) no-repeat center center;
-	opacity: 0.5;	
 }
-
-.tp-leftarrow.default:hover,
-.tp-rightarrow.default:hover { opacity: 1; }
 
 .tp-bullets.simplebullets.round .bullet {
 	width: 11px;
 	height: 11px;
 	border-radius: 50%;
 	margin-right: 5px;
-	background: #96e0a9;
+	background: white;
 }
 
 .tp-bullets.simplebullets.round .bullet:last-child { margin-right: 0; }
 
 .tp-bullets.simplebullets.round .bullet:hover,
-.tp-bullets.simplebullets.round .bullet.selected { background: #08ab89; }
+.tp-bullets.simplebullets.round .bullet.selected { background: #f13d46; }
 
 @media (min-width: 1100px) {
 

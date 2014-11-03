@@ -1544,7 +1544,7 @@
 	
 	/* WordPress Widget Defaults */
 	
-	.widget { margin-bottom: 40px; }
+	.widget { margin-bottom: 40px; width: 250px;}
 	
 	.widget-title { 
 		margin-bottom: 20px;

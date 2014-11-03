@@ -36,10 +36,10 @@
                                 <div class="controls col-md-10">
                                     <div class="fileupload fileupload-new" data-provides="fileupload">
                                         <div class="fileupload-new thumbnail" style="height: 150px;">
-                                            <?php if (!empty($customer->image)): ?>
-                                                    <img src="<?php echo site_url($customer->image) ?>" height="150">
+                                            <?php if (!empty($featured->image)): ?>
+                                                    <img src="<?php echo site_url($featured->image) ?>" height="150">
                                             <?php endif; ?>
-                                            <?php if (empty($customer->image)): ?>
+                                            <?php if (empty($featured->image)): ?>
                                             <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="No hay imagen" />
                                             <?php endif; ?>
                                         </div>
