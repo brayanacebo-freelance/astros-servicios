@@ -936,6 +936,7 @@ select.validation-error { border: 1px solid #e1a1a1; }
 	 .featured{
 	 	margin-top: 30px;
 	 	background-color: white;
+	 	height: 420px;
 	 }
 	 .featured img{
 	 	width: 100%;
@@ -950,6 +951,9 @@ select.validation-error { border: 1px solid #e1a1a1; }
 	 	background-color: #2e64ba;
 	 	color: white !important;
 	 	border: none;
+	 	position: absolute;
+	 	right: 0px;
+	 	bottom: 0px;
 	 }
 	 h5{
 	 	margin-top: 30px;
@@ -1000,6 +1004,22 @@ select.validation-error { border: 1px solid #e1a1a1; }
 
 	 .astros-title{
 	 	font-size: 24px;
+	 }
+
+	 /*Servicios*/
+
+	 .services-image{
+	 	height: 185px;
+		overflow: hidden;
+	 }
+
+	 .service-items{
+	 	height: 410px;
+	 }
+
+	 .service{
+	 	margin-left: 0px !important;
+	 	margin-right: 20px;
 	 }
 	 
 
