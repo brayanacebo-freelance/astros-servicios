@@ -41,4 +41,26 @@ class Servicios extends Public_Controller {
         ->set('servicios', $servicios)
         ->build('index');
     }
+
+    // --------------------------------------------------------------------------------------
+
+    public function detalle($slug = null) {
+        $slug or redirect('servicios');
+        $service = $this->db->where('slug', $slug)->get('servicios')->row();
+        $images = $this->db->where('servicio_id', $service->id)->get('servicios_images')->result();
+
+        // Se consultan 3 servicios al azar
+        $services = $this->db
+                ->order_by('id', 'RANDOM')
+                ->limit(3)
+                ->get('servicios')
+                ->result();
+        
+        $this->template
+        ->set('services', $services)
+        ->set('service', $service)
+        ->set('images', $images)
+        ->build('detail');
+    }
+
 }

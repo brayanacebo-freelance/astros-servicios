@@ -494,6 +494,11 @@
 	    maxSlides: 6,
 	    slideMargin: 10
 	  });
+
+	  $('.slider-services').bxSlider({
+		  pagerCustom: '#bx-pager'
+	  });
+
 	});
 	
 
