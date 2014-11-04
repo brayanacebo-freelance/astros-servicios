@@ -486,6 +486,20 @@
 		handleequalCols();
 		
 	});
+
+	$(document).ready(function(){
+	  $('.slider-customer').bxSlider({
+	    slideWidth: 200,
+	    minSlides: 5,
+	    maxSlides: 6,
+	    slideMargin: 10
+	  });
+
+	  $('.slider-services').bxSlider({
+		  pagerCustom: '#bx-pager'
+	  });
+
+	});
 	
 
 })(window.jQuery);

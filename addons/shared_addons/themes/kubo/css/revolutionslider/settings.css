@@ -98,7 +98,7 @@ website:   	http://www.themepunch.com
 			border-width: 0px;
 			border-style: none;
 			background-color:#888;
-			white-space:nowrap;
+			
 			text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 		}
 
@@ -113,7 +113,7 @@ website:   	http://www.themepunch.com
 			margin: 0px;
 			border-width: 0px;
 			border-style: none;
-			white-space:nowrap;
+			
 			text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 		}
 
@@ -128,7 +128,7 @@ website:   	http://www.themepunch.com
 			margin: 0px;
 			border-width: 0px;
 			border-style: none;
-			white-space:nowrap;
+			
 			text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 		}
 
@@ -143,7 +143,7 @@ website:   	http://www.themepunch.com
 			margin: 0px;
 			border-width: 0px;
 			border-style: none;
-			white-space:nowrap;
+			
 			text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 		}
 .tp-caption.large_black_text{
@@ -157,7 +157,7 @@ website:   	http://www.themepunch.com
 			margin: 0px;
 			border-width: 0px;
 			border-style: none;
-			white-space:nowrap;
+			
 		}
 
 .tp-caption.very_large_text{
@@ -171,7 +171,7 @@ website:   	http://www.themepunch.com
 			margin: 0px;
 			border-width: 0px;
 			border-style: none;
-			white-space:nowrap;
+			
 			text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 			letter-spacing: 0px;
 		}
@@ -186,7 +186,7 @@ website:   	http://www.themepunch.com
 			margin: 0px;
 			border-width: 0px;
 			border-style: none;
-			white-space:nowrap;
+			
 		}
 .tp-caption.bold_red_text{
 			position: absolute;
@@ -199,7 +199,7 @@ website:   	http://www.themepunch.com
 			margin: 0px;
 			border-width: 0px;
 			border-style: none;
-			white-space:nowrap;
+			
 		}
 .tp-caption.bold_brown_text{
 			position: absolute;
@@ -212,7 +212,7 @@ website:   	http://www.themepunch.com
 			margin: 0px;
 			border-width: 0px;
 			border-style: none;
-			white-space:nowrap;
+			
 		}
     .tp-caption.bold_green_text{
 			position: absolute;
@@ -225,7 +225,7 @@ website:   	http://www.themepunch.com
 			margin: 0px;
 			border-width: 0px;
 			border-style: none;
-			white-space:nowrap;
+			
 		}
 
 .tp-caption.very_big_white{
@@ -239,7 +239,7 @@ website:   	http://www.themepunch.com
 			margin: 0px;
 			border-width: 0px;
 			border-style: none;
-			white-space:nowrap;
+			
 			padding: 3px 4px;
 			padding-top: 1px;
 			background-color:#7e8e96;
@@ -256,7 +256,7 @@ website:   	http://www.themepunch.com
 			margin: 0px;
 			border-width: 0px;
 			border-style: none;
-			white-space:nowrap;
+			
 			padding: 0px 4px;
 			padding-top: 1px;
 			background-color:#fff;
@@ -274,7 +274,7 @@ website:   	http://www.themepunch.com
 			margin: 0px; 
 			border-width: 0px; 
 			border-style: none; 
-			white-space:nowrap;		
+					
 		}
 .tp-caption.modern_medium_fat_white{
 			position: absolute; 
@@ -287,7 +287,7 @@ website:   	http://www.themepunch.com
 			margin: 0px; 
 			border-width: 0px; 
 			border-style: none; 
-			white-space:nowrap;		
+					
 		}
 .tp-caption.modern_medium_light{
 			position: absolute; 
@@ -300,7 +300,7 @@ website:   	http://www.themepunch.com
 			margin: 0px; 
 			border-width: 0px; 
 			border-style: none; 
-			white-space:nowrap;		
+					
 		}
 .tp-caption.modern_big_bluebg{
 			position: absolute; 
@@ -343,7 +343,7 @@ website:   	http://www.themepunch.com
 			margin: 0px; 
 			border-width: 0px; 
 			border-style: none; 
-			white-space:nowrap;		
+					
 		}
 
 					

@@ -54,6 +54,8 @@ $route['register']                          = 'users/register';
 $route['user/(:any)']	                    = 'users/view/$1';
 $route['my-profile']	                    = 'users/index';
 $route['edit-profile']	                    = 'users/edit';
+$route['contactenos']	                    = 'home/contactenos';
+$route['contactenos/([a-zA-Z0-9_-]+)']              = 'home/contactenos/$1';
 
 $route['sitemap.xml']                       = 'sitemap/xml';
 

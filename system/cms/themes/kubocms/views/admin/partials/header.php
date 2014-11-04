@@ -1,6 +1,6 @@
 <header class="header fixed-top clearfix">
 	<div class="brand">
-		<?php echo anchor('','<img src="'.$this->admin_theme->path.'/img/logo.png" alt="KuboCMS">', 'class="logo" target="_blank"') ?>
+		<a href="http://localhost/freelos/astros/" class="logo" target="_blank"><strong style="color: white">KuboCMS</strong></a>
 	    <div class="sidebar-toggle-box">
 	        <div class="fa fa-bars"></div>
 	    </div>

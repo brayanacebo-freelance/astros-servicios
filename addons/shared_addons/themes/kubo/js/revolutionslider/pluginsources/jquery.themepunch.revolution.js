@@ -3504,8 +3504,7 @@
 																				 'border-right': (nc.data('br') * opt.bw) + "px",
 
 																				 'line-height': (nc.data('lh') * opt.bh) + "px",
-																				 'height':(hh*opt.bh)+'px',
-																				 'white-space':"nowrap"
+																				 'height':(hh*opt.bh)+'px'
 																				});
 																	else  {
 																		   offsetx=0; offsety=0;
@@ -3821,7 +3820,7 @@
 												 'borderRightWidth': Math.round((nc.data('br') * opt.bw)) + "px",
 
 												 'line-height': Math.round((nc.data('lh') * opt.bh)) + "px",
-												 'white-space':"nowrap",
+												 
 												 'minWidth':(nc.data('minwidth') * opt.bw) + "px",
 												 'minHeight':(nc.data('minheight') * opt.bh) + "px",
 								});

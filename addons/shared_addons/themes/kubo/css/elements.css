@@ -1026,7 +1026,6 @@
 	
 	.box-3 {
 		padding: 30px 0;
-		background-color: #f6f1ed;
 		margin-bottom: 60px; 
 	}
 	
@@ -1544,7 +1543,7 @@
 	
 	/* WordPress Widget Defaults */
 	
-	.widget { margin-bottom: 40px; }
+	.widget { margin-bottom: 40px; width: 250px;}
 	
 	.widget-title { 
 		margin-bottom: 20px;

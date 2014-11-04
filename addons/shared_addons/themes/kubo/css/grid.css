@@ -22,7 +22,7 @@
 
 	.row { 
 		position: relative; 
-		width: 940px; 
+		width: 1000px; 
 		margin: 0 auto;
 	}
 	
@@ -50,7 +50,7 @@
 	}
 	
 	.span2 { 
-		width: 140px; 
+		width: 160px; 
 		margin-left: 20px; 
 	}
 	
@@ -90,7 +90,7 @@
 	}
 	
 	.span10 { 
-		width: 780px; 
+		width: 800px; 
 		margin-left: 20px; 
 	}
 	
