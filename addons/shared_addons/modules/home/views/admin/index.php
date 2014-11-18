@@ -30,7 +30,7 @@
                                         <th>Titulo</th>
                                         <th>Texto</th>
                                         <th>Link</th>
-                                        <th width="90"><?php echo lang('global:actions') ?></th>
+                                        <th width="90">Acciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -64,7 +64,7 @@
                             <tr>
                                 <th>Imagen</th>
                                 <th>Link</th>
-                                <th><?php echo lang('global:actions') ?></th>
+                                <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -99,7 +99,7 @@
                     <th style="width: 20%">Titulo</th>
                     <th style="width: 20%">Texto</th>
                     <th style="width: 20%">Link</th>
-                    <th width="180"><?php echo lang('global:actions') ?></th>
+                    <th width="180">Acciones</th>
                 </tr>
             </thead>
             <tbody>

@@ -627,9 +627,9 @@
 		text-align: center;
 	}
 	
-	.icon-box-2 .icon-box-content {}
+	.icon-box-2 .icon-box-content { padding: 1px; }
 	.icon-box-2 .icon-box-content a { color: #535a68; }
-	.icon-box-2 .icon-box-content h3 { margin-bottom: 30px; }
+	.icon-box-2 .icon-box-content h3 { margin-bottom: 15px; }
 	
 	.icon-box-2:hover i { background-color: #8bd99f; }	
 

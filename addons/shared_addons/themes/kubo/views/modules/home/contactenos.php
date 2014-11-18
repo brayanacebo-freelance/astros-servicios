@@ -13,6 +13,17 @@
 	</div><!-- end .row -->
 
 	<div class="row">
+		<div class="span12">
+			<?php if(!empty($msj)): ?>
+			<div class="alert success" style="text-align: center;">
+                <i class="fa fa-check-circle-o"></i>Mensaje enviado <strong>exitosamente</strong>!!
+            </div>
+			<?php endif; ?>
+		</div>
+	</div>
+
+
+	<div class="row">
 		<div class="span6">
 			{{ if session:messages }}
 			<div class="session-message-box">
@@ -27,12 +38,6 @@
 			</div>
 			{{ endif }}
 
-			<?php if(!empty($msj)): ?>
-			<div class="alert success">
-                    	<i class="fa fa-check-circle-o"></i>Mensaje enviado <strong>exitosamente</strong>!!
-                    </div>
-			<?php endif; ?>
-
 			<form class="fixed" name="contact-form" method="post" action="<?php echo site_url('home/send'); ?>"> 
 				<fieldset>
 
@@ -46,7 +51,7 @@
 
 					<textarea class="span6" name="message" rows="10" cols="25" placeholder="Mensaje" required="required"></textarea>
 
-					<input class="btn btn-green-dark float-right" id="submit" type="submit" name="submit" value="Enviar Mensaje" style="position: absolute;background-color: #204594;">
+					<input class="btn btn-green-dark float-right bhover" id="submit" type="submit" name="submit" value="Enviar Mensaje">
 
 				</fieldset>
 			</form>
@@ -54,10 +59,18 @@
 
 		<div class="span6">
 
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7981060840625!2d-74.09779743914798!3d4.630078042090705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bde4e53e4a7%3A0x10352775b9bc4f21!2sLaboratorios+Synthesis!5e0!3m2!1ses-419!2ses!4v1415058578500" width="100%" height="355" frameborder="0" style="border:0"></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7981060840625!2d-74.09779743914798!3d4.630078042090705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bde4e53e4a7%3A0x10352775b9bc4f21!2sLaboratorios+Synthesis!5e0!3m2!1ses-419!2ses!4v1415058578500" width="100%" height="310" frameborder="0" style="border:0"></iframe>
 
 		</div><!-- end .span9 -->
 	</div><!-- end .row -->
 	<br><br>
 
 </div>
+<style>
+	.bhover{
+		position: absolute;
+		background-color: #204594;
+	}.bhover:hover{
+		background-color: #f13d46;
+	}
+</style>

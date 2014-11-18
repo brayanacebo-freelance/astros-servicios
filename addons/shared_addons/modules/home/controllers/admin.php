@@ -13,7 +13,6 @@ class Admin extends Admin_Controller {
     public function __construct()
     {
         parent::__construct();
-        $this->lang->load('home');
         $this->template->append_metadata($this->load->view('fragments/wysiwyg', null, TRUE));
         $models = array(
             'home_customer_m',
@@ -91,7 +90,7 @@ class Admin extends Admin_Controller {
                 $this->session->set_flashdata('success', 'Los registros se ingresaron con éxito.');
                 redirect('admin/home/');
             } else {
-                $this->session->set_flashdata('success', lang('home:error_message'));
+                $this->session->set_flashdata('success', 'Error al almacenar los registros');
                 return $this->new_customer();
             }
         } else {
@@ -154,7 +153,7 @@ class Admin extends Admin_Controller {
                 $this->session->set_flashdata('success', 'Los registros se actualizarón con éxito.');
                 redirect('admin/home/');
             } else {
-                $this->session->set_flashdata('success', lang('home:error_message'));
+                $this->session->set_flashdata('success', 'Error al almacenar los registros');
                 return $this->edit_customer();
             }
         } else {
@@ -264,7 +263,7 @@ class Admin extends Admin_Controller {
               }
               else
               {
-               $this->session->set_flashdata('error', lang('home:error_message'));
+               $this->session->set_flashdata('error', 'Error al almacenar los registros');
                header('Location: '.$_SERVER['REQUEST_URI']);
            }
        }
@@ -303,7 +302,7 @@ class Admin extends Admin_Controller {
            }
            else
            {
-               $this->session->set_flashdata('error', lang('home:error_message'));
+               $this->session->set_flashdata('error', 'Error al almacenar los registros');
                header('Location: '.$_SERVER['REQUEST_URI']);
            }
        }
@@ -392,7 +391,7 @@ public function destroy_slider($id = null) {
          }
          else
          {
-             $this->session->set_flashdata('error', lang('home:error_message'));
+             $this->session->set_flashdata('error', 'Error al almacenar los registros');
          }
 
          redirect('admin/home/edit_featured/'.$idItem);

@@ -11,7 +11,9 @@
             <div class="span4">
                 <div class="icon-box-2 featured">
                     <a href="{{ link }}">
-                        <img src="{{ image }}">
+                        <div>
+                            <img src="{{ image }}">
+                        </div>
                     </a>
 
                     <div class="icon-box-content">
@@ -41,12 +43,7 @@
                     
                     </div><!-- end .span12 -->
             </div><!-- end .row -->
-                
-
-
-
-
-
+              
         </div><!-- end #content -->
 
     </div><!-- end #wrap -->

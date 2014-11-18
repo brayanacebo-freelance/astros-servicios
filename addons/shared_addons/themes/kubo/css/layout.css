@@ -121,6 +121,7 @@
 .sf-menu li {
 	-webkit-transition: background .2s;
 	transition: background .2s;
+	margin-top: 7px;
 }
 
 .sf-menu li:hover,
@@ -141,7 +142,7 @@
 	background-color: #204594;
 	border-top: 2px solid #204594; 
 	margin-top: -2px;
-	height: 10px;
+	height: 3px;
 }
 
 .sf-menu li.current {
@@ -345,7 +346,7 @@ address span { color: #0dac8b; }
 }
 
 .footer-title{
-	margin-right: 108px !important;
+	margin-right: 117px !important;
 	font-style: italic;
 	font-size: 15px;
 	font-family: 'futura';
@@ -933,8 +934,12 @@ select.validation-error { border: 1px solid #e1a1a1; }
 	 * Estilos del home
 	 */
 
+	 .services{
+	 	margin-top: 40px;
+	 }
+
 	 .featured{
-	 	margin-top: 30px;
+	 	margin-top: 14px;
 	 	background-color: white;
 	 	height: 420px;
 	 }
@@ -943,6 +948,7 @@ select.validation-error { border: 1px solid #e1a1a1; }
 	 }
 	 .featured h3{
 	 	line-height: 21px !important;
+	 	margin-top: 5px;
 	 }
 	 .featured-description{
 	 	padding: 0 10px;
@@ -953,7 +959,15 @@ select.validation-error { border: 1px solid #e1a1a1; }
 	 	border: none;
 	 	position: absolute;
 	 	right: 0px;
-	 	bottom: 0px;
+	 	bottom: -15px;
+	 }
+	 .detail-project a:hover{
+	 	background-color: #f13d46;
+	 	color: white !important;
+	 	border: none;
+	 	position: absolute;
+	 	right: 0px;
+	 	bottom: -15px;
 	 }
 	 h5{
 	 	margin-top: 30px;
@@ -1008,6 +1022,11 @@ select.validation-error { border: 1px solid #e1a1a1; }
 
 	 /*Servicios*/
 
+	 .service-text{
+	 	text-align: justify;
+	 	margin-top: -20px;
+	 }
+
 	 .services-image{
 	 	height: 185px;
 		overflow: hidden;
@@ -1020,6 +1039,7 @@ select.validation-error { border: 1px solid #e1a1a1; }
 	 .service{
 	 	margin-left: 0px !important;
 	 	margin-right: 20px;
+	 	margin-top: -55px;
 	 }
 	 
 	 .detail-service{
@@ -1035,6 +1055,7 @@ select.validation-error { border: 1px solid #e1a1a1; }
 
 	 .service-title{
 	 	font-size: 24px;
+	 	text-align: center;
 	 }
 
 	 .service-button{
@@ -1053,8 +1074,15 @@ select.validation-error { border: 1px solid #e1a1a1; }
 	 	color: white !important;
 	 }
 
-	 .service-button-back:hover{
+	 .service-button-back2{
+	 	background-color: #204594;
 	 	border-color: #204594;
+	 	color: white !important;
+	 }
+
+	 .service-button-back:hover{
+	 	border-color: #f13d46;
+	 	background-color: #f13d46;
 	 }
 
 /* #Page 404

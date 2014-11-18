@@ -24,9 +24,10 @@
 			<img width="100%" src="{{ data.image_one }}">
 		</div>
 		<div class="span6">
-
-			<div class="text-center astros-title"><strong>{{ data.title_one }} </strong></div><br>
-			{{ data.text_one }}
+			<div class="text-center astros-title"><strong style="line-height: 25px;">{{ data.title_one }} </strong></div><br><br>
+			<div class="service-text">
+				{{ data.text_one }}
+			</div>
 			<a href="<?php echo site_url('contactenos'); ?>" class="btn service-button-back">Solicitar Servicio</a>
 		</div><!-- end .span12 -->            
 
@@ -39,8 +40,10 @@
 		</div>
 		<div class="span6">
 			
-			<div class="text-center astros-title"><strong>{{ data.title_two }} </strong></div><br>
-			{{ data.text_two }}
+			<div class="text-center astros-title"><strong style="line-height: 25px;">{{ data.title_two }} </strong></div><br><br>
+			<div class="service-text">
+				{{ data.text_two }}
+			</div>
 			<a href="<?php echo site_url('contactenos'); ?>" class="btn service-button-back">Solicitar Servicio</a>
 		</div><!-- end .span12 -->            
 		

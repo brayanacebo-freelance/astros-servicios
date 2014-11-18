@@ -16,11 +16,13 @@
 		</div><!-- end .team-member -->
 		{{ endif }}
 		<div class="<?php echo ($images) ? 'span6' : 'span12'?>" <?php echo ($images) ? '' : 'style="padding: 20px;"'?>>
-			<div class="service-title"><strong>{{ service.name }}</strong></div>
+			<div class="service-title"><strong style="line-height: 25px;">{{ service.name }}</strong></div>
 			<br><br>
+			<div class="service-text">
 			{{ service.description }}
+			</div>
 			<a href="<?php echo site_url('contactenos') ?>" class="btn service-button">Solicitar Servicio</a>
-			<a href="<?php echo site_url('servicios'); ?>" class="btn service-button-back">Volver a servicios</a>
+			<a href="<?php echo site_url('servicios'); ?>" class="btn service-button-back2">Volver a servicios</a>
 		</div><!-- end .span8 -->
 	</div><!-- end .row -->
 
